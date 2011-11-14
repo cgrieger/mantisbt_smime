@@ -1,0 +1,27 @@
+<?php
+$s_plugin_smime_title = 'Mantis-Smime';
+$s_plugin_smime_description = 'Enables mantis to send encrypted email.';
+$s_plugin_Smime_menu_manage = 'S/MIME Configuration';
+$s_plugin_smime_add_user_title = 'New S/MIME user';
+$s_plugin_smime_existing_user_title = 'Existing S/MIME users';
+$s_plugin_Smime_delete = 'Delete';
+$s_plugin_Smime_cert_import_error = 'Certificate import failed. Invalid certificate!';
+$s_plugin_Smime_success = 'Success.';
+$s_plugin_Smime_error = 'Error.';
+$s_plugin_Smime_test = 'Testmail';
+$s_plugin_Smime_select_certificate_file = 'Select certificate file';
+$s_plugin_smime_submit = 'Send';
+
+
+$s_plugin_Smime_bugnote = 'A NOTE has been added to this issue.';
+$s_plugin_Smime_owner = 'The following issue has been ASSIGNED.';
+$s_plugin_Smime_new = 'The following issue is now in status NEW.';
+$s_plugin_Smime_feedback = 'The following issue requires your FEEDBACK.';
+$s_plugin_Smime_resolved = 'The following issue has been RESOLVED.';
+$s_plugin_Smime_closed = 'The following issue has been CLOSED';
+$s_plugin_Smime_reopened = 'The following issue has been REOPENED.';
+$s_plugin_Smime_deleted = 'The following issue has been DELETED.';
+$s_plugin_Smime_updated = 'The following issue has been UPDATED.';
+$s_plugin_Smime_sponsor = 'The following issue\'s SPONSORSHIP has changed.';
+$s_plugin_Smime_relation = 'The following issues RELATIONSHIPS have changed.';
+$s_plugin_Smime_monitor = 'Issue is now MONITORED by another user.';
