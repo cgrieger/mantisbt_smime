@@ -1,6 +1,7 @@
 h1. MantisBT S/MIME Plugin
 
-This is a plugin which enables the "Mantis Bug Tracker":http://www.mantisbt.org to encrypt mail notifications with X.509 certificates.
+This is a plugin which enables the "Mantis Bug Tracker":http://www.mantisbt.org to encrypt mail notifications with X.509 certificates. It uses your existing SMTP configuration. This plugin was developed 
+for Mantis 1.2.8 but should work in any 1.2.x version of Mantis.
 
 h2. Installation
 
