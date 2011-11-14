@@ -1,1 +1,1 @@
-h1. MantisBT S/MIME PluginThis is a plugin which enables the mantis bugtracker(http://www.mantisbt.org) to encrypt mail notifications.h2. Usage
+h1. MantisBT S/MIME PluginThis is a plugin which enables the mantis bugtracker(http://www.mantisbt.org) to encrypt mail notifications.
