@@ -18,9 +18,8 @@ class SmimePlugin extends MantisPlugin
 			'MantisCore' => '1.2.0',
 		);
 
-		$this->author = 'Chris Grieger - syngenio AG';
-		$this->contact = 'Chris.Grieger@syngenio.de';
-		$this->url = 'http://www.syngenio.de';
+		$this->author = 'Chris Grieger';
+		$this->contact = 'chris@grieger.biz';
 	}
 
 	/**

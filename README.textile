@@ -1,8 +1,28 @@
 h1. MantisBT S/MIME Plugin
 
-This is a plugin which enables the mantis bugtracker(http://www.mantisbt.org) to encrypt mail notifications.
+This is a plugin which enables the "Mantis Bug Tracker":http://www.mantisbt.org to encrypt mail notifications with X.509 certificates.
+
+h2. Installation
+
+You can download an archive containing this plugin "HERE":https://github.com/cgrieger/mantisbt_smime/tree/master/install/mantisbt_smime_current.zip
+
+* Unzip the archive inside your <mantis>\plugins folder.
+* Login to Mantis with your administrative account and select the "Manage" section
+* Open the plugin management page
+* Enable the "Mantis-Smime 1.0" plugin
 
 h2. Usage
 
 After enabling the plugin in the mantis management section you will find a new menu item named "S/Mime Configuration".
+You are then able to select a user and upload a base64 encoded certificate file. Every e-mail outgoing e-mail notification will be encrypted after this step is complete.
+Theres also the option to send a test e-mail to the user.
+
+h2. Known Problems
+
+Because of the way the notification event system in Mantis works, there is currently no possible way to correctly create "relationship changed" mail notification. 
+When normal unencrypted mails would say "ISSUE X is RELATED to ISSUE Y", the encrypted mails only tell you that the relationshio of the ticket has somehow changed.
+
+h2. Help & Support
+
+If you have any questions or suggestions regarding this plugin, then feel free to use the "ISSUES function":https://github.com/cgrieger/mantisbt_smime/issues of the github repository. 
 
