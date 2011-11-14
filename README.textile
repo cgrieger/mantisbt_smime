@@ -4,7 +4,7 @@ This is a plugin which enables the "Mantis Bug Tracker":http://www.mantisbt.org 
 
 h2. Installation
 
-You can download an archive containing this plugin "HERE":https://github.com/cgrieger/mantisbt_smime/tree/master/install/mantisbt_smime_current.zip
+You can download an archive containing this plugin "HERE":https://github.com/cgrieger/mantisbt_smime/blob/master/install/mantisbt_smime_current.zip?raw=true
 
 * Unzip the archive inside your <mantis>\plugins folder.
 * Login to Mantis with your administrative account and select the "Manage" section
@@ -20,9 +20,9 @@ Theres also the option to send a test e-mail to the user.
 h2. Known Problems
 
 Because of the way the notification event system in Mantis works, there is currently no possible way to correctly create "relationship changed" mail notification. 
-When normal unencrypted mails would say "ISSUE X is RELATED to ISSUE Y", the encrypted mails only tell you that the relationshio of the ticket has somehow changed.
+When normal unencrypted mails would say "ISSUE X is RELATED to ISSUE Y", the encrypted mails only tell you that the relationship of the ticket has somehow changed.
 
 h2. Help & Support
 
-If you have any questions or suggestions regarding this plugin, then feel free to use the "ISSUES function":https://github.com/cgrieger/mantisbt_smime/issues of the github repository. 
+If you have any questions or suggestions regarding this plugin, then feel free to create an "ISSUE":https://github.com/cgrieger/mantisbt_smime/issues. 
 
