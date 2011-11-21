@@ -37,15 +37,13 @@ class SmimePHPMailer extends PHPMailer {
 
 			//write clear msg to file
 			$fp = fopen($file, "w");
-			fwrite($fp, $header . $body);
+			fwrite($fp, $header . $body);			
 			fclose($fp);
-
+			// Setup mail headers.
+			$headers = array("From" => $this->FromName, "To" => $this->email_address, "Subject" => $this->Subject, "X-Mailer" => "PHP/".phpversion());
 			//encrypted datafile
-			if (openssl_pkcs7_encrypt($file, $file2, $this->encrypt_key_files,
-			array("To" => $this->email_address,
-          "From" => $this->FromName." <".$smtp_from.">", 
-          "Subject" => $this->Subject),0,OPENSSL_CIPHER_3DES)) {
-			 
+			if (openssl_pkcs7_encrypt($file, $file2, $this->encrypt_key_files,$headers,0,OPENSSL_CIPHER_3DES)) {
+
 			//read encrypted data from file
 			$fp = fopen($file2, "r");
 			$encData = '';

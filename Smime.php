@@ -116,10 +116,7 @@ class SmimePlugin extends MantisPlugin
 		$smtp_pass = config_get("smtp_password");
 		$smtp_host = config_get("smtp_host");
 
-
-
-		// Setup mail headers.
-		$headers = array("From" => $from_email, "To" => $recipient_email, "Subject" => $subject, "X-Mailer" => "PHP/".phpversion());
+	
 
 		/*
 		 * Build the message
@@ -145,9 +142,9 @@ class SmimePlugin extends MantisPlugin
 
 		$mail->Subject  = $subject;
 		$mail->Body     = $body;
-		$mail->WordWrap = 50;
-		
+		$mail->WordWrap = 50;		
 		$mail->Encoding = 'base64';
+		$mail->CharSet = 'utf-8';
 
 		//add publickey array for encryption
 		$mail->setEncrypt_key_files(array($pubkey));

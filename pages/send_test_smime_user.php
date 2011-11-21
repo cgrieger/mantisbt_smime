@@ -47,12 +47,13 @@ $mail->Subject  = $subject;
 $mail->Body     = $body;
 $mail->WordWrap = 50;
 $mail->Encoding = 'base64';
+$mail->CharSet = 'utf-8'; 
 
 //add publickey array for encryption
 $mail->setEncrypt_key_files(array($pubkey));
 if(!$mail->Send()) {
 	error_log('Message was not sent.');
-	error_log('Mailer error: ' . $mail->ErrorInfo);
+	error_log('Mailer error: ' . $smail->ErrorInfo);
 	$success = false;
 } else {
 	error_log('Message has been sent.');
